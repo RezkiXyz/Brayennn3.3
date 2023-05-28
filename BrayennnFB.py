@@ -82,10 +82,11 @@ for brayen in range(10000):
     rc = random.choice
     g1 = random.choice(['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19'])
     g2 = random.choice(['OPM1','TP1A','RP1A','PPR1','PKQ1','QP1A','SP1A','RKQ1','QKQ1'])
-    g3 = random.choice(['SM-P585Y','SM-G935S','SM-A405FN','SM-G781B','SM-J260F','SM-A515F','SM-N950U','SM-A107M','SM-A307FN'])
+    g3 = random.choice(['M2012K11AG','22101320G','SM-A405FN'])
     u1 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; {g3} Build/{g2}.{str(rr(111111,210000))}.0{g1}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u2 = f"Mozilla/5.0 (iPhone; CPU iPhone OS {str(rr(11,16))}_{str(rr(4,9))}_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Version/{str(rr(4,19))}.{str(rr(1,9))} Safari/605.1.15"
-    UaMainn = random.choice([u1, u2])
+    u2 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; Meizu C{str(rr(9,19))} Build/{g2}.{str(rr(111111,210000))}.0{g1}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u3 = f"Mozilla/5.0 (Linux; U; Android 7.1.2;{str(rr(1,9))}.{str(rr(1,9))}; Redmi 4A Build/N2G47H){str(rr(100,9999))} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.128{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36 XiaoMi/Mint Browser/1.3.3"
+    UaMainn = random.choice([u1, u2, u3])
     ugen.append(UaMainn)
  
 for x in range(10):
